@@ -1,3 +1,7 @@
+# Inarus Lynx's Dactyl Manuform
+ 
+This is a build for my 5x6 Dactyl Manuform. It utilizes an Elite-C MCU, 10 RGB LEDs, and OLED screen on each half. The USB will be plugged into the right keyboard.
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
