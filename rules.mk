@@ -1,1 +1,5 @@
 SRC += source.c
+
+OLED_ENABLE = yes
+RGBLIGHT_ENABLE = yes
+SPLIT_KEYBOARD = yes
