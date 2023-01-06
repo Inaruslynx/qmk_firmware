@@ -14,6 +14,9 @@ To determine which is the right and left half of the split keyboard I will use E
 when flashing the MCU I need to use the following
 for left: :dfu-split-left
 for right: :dfu-split-right
+
+Info on Audio: AUDIO_ENABLE = yes
+Audio pin will be C7.
 */
 
 #undef RGB_DI_PIN
@@ -50,3 +53,9 @@ for right: :dfu-split-right
 // This shares the lock key status
 #define SPLIT_LED_STATE_ENABLE
 
+// For small piezo buzzer
+#define AUDIO_PIN C7
+#define AUDIO_ENABLE_TONE_MULTIPLEXING
+#define AUDIO_TONE_MULTIPLEXING_RATE_DEFAULT 10
+// https://docs.qmk.fm/#/feature_audio?id=audio-click
+// #define AUDIO_CLICKY // This would make the little speaker simulate key presses
