@@ -7,8 +7,7 @@ This keyboard will use D1 and D0 for the OLED screen. This is the only viable op
 it should know this. There is no option to define pins.
 
 Info on RGB lights: https://docs.qmk.fm/#/feature_rgblight?id=rgb-lighting
-Configuring B7 to be the RGB DI PIN for the Elite-C since micropro is what the dactyl was originally written
-for I will initially try pin D11 as that is the equivalent Arduino pin. My RGB strips only have 10 LED's
+Configuring B7 to be the RGB DI PIN for the Elite-C. My RGB strips only have 10 LED's
 
 To determine which is the right and left half of the split keyboard I will use EEPROM
 when flashing the MCU I need to use the following
@@ -20,14 +19,14 @@ Audio pin will be C7.
 */
 
 #undef RGB_DI_PIN
-#define RGB_DI_PIN D11
+#define RGB_DI_PIN B7 // Initially tried D11 and that didn't work.
 
 #undef RGBLED_NUM
 //#define RGBLED_NUM 10
 #define RGBLIGHT_SPLIT
 #define RGBLED_SPLIT { 10, 10 }
 
-#undef USE_I2C
+//#undef USE_I2C // commenting this out because the OLED screen uses I2C
 #define SOFT_SERIAL_PIN D2
 
 #define EE_HANDS
