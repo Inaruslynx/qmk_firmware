@@ -4,6 +4,7 @@
 // incase the below code doesn't work: https://docs.qmk.fm/#/feature_rgblight?id=lighting-layers
 #ifdef OLED_ENABLE
 bool oled_task_user(void) {
+    oled_set_cursor(0, 1);
     // Host Keyboard Layer Status
     oled_write_P(PSTR("Layer: "), false);
 
