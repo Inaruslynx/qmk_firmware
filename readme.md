@@ -1,6 +1,6 @@
 # Inarus Lynx's Dactyl Manuform
  
-This is a build for my 5x6 Dactyl Manuform. It utilizes an Elite-C MCU, 10 RGB LEDs, and OLED screen on each half. The USB will be plugged into the right keyboard.
+This is a build for my 5x6 Dactyl Manuform. It utilizes an Elite-C MCU, 10 RGB LEDs, a buzzer, and OLED screen on each half. The USB can be plugged into either side.
 
 # Quantum Mechanical Keyboard Firmware
 
