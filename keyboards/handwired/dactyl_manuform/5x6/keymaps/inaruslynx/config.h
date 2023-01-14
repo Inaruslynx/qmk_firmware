@@ -18,7 +18,7 @@ Info on Audio: AUDIO_ENABLE = yes
 Audio pin will be B7.
 */
 
-// #undef RGB_DI_PIN
+#undef RGB_DI_PIN
 #define RGB_DI_PIN C7 // Initially tried D11 and that didn't work.
 
 // #undef RGBLED_NUM
@@ -27,6 +27,7 @@ Audio pin will be B7.
 #define RGBLED_SPLIT { 10, 10 }
 
 //#undef USE_I2C // commenting this out because the OLED screen uses I2C
+#undef SOFT_SERIAL_PIN
 #define SOFT_SERIAL_PIN D2
 
 //#undef SPLIT_HAND_PIN
