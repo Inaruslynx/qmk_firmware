@@ -7,7 +7,7 @@ This keyboard will use D1 and D0 for the OLED screen. This is the only viable op
 it should know this. There is no option to define pins.
 
 Info on RGB lights: https://docs.qmk.fm/#/feature_rgblight?id=rgb-lighting
-Configuring B7 to be the RGB DI PIN for the Elite-C. My RGB strips only have 10 LED's
+Configuring C7 to be the RGB DI PIN for the Elite-C. My RGB strips only have 10 LED's
 
 To determine which is the right and left half of the split keyboard I will use EEPROM
 when flashing the MCU I need to use the following
@@ -15,11 +15,11 @@ for left: :dfu-split-left
 for right: :dfu-split-right
 
 Info on Audio: AUDIO_ENABLE = yes
-Audio pin will be C7.
+Audio pin will be B7.
 */
 
 // #undef RGB_DI_PIN
-#define RGB_DI_PIN B7 // Initially tried D11 and that didn't work.
+#define RGB_DI_PIN C7 // Initially tried D11 and that didn't work.
 
 // #undef RGBLED_NUM
 //#define RGBLED_NUM 10
@@ -55,7 +55,7 @@ Audio pin will be C7.
 #define SPLIT_LED_STATE_ENABLE
 
 // For small piezo buzzer
-#define AUDIO_PIN C7
+#define AUDIO_PIN B7
 #define AUDIO_ENABLE_TONE_MULTIPLEXING
 #define AUDIO_TONE_MULTIPLEXING_RATE_DEFAULT 10
 // https://docs.qmk.fm/#/feature_audio?id=audio-click
